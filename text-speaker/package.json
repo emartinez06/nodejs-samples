@@ -1,0 +1,16 @@
+{
+    "name": "text-speaker",
+    "version": "1.0.0",
+    "description": "A text-to-speech service",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "keywords": [],
+    "author": "E. Martinez",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.17.1",
+        "say": "^0.16.0"
+    }
+}
