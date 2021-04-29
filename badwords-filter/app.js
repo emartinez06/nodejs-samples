@@ -9,12 +9,14 @@ const filter = new Filter();
 const words = require("./dictionary/badwords.json");
 filter.addWords(...words);
 
+//Remove words
+//filter.removeWords('hells', 'hell','sadist');
+
 //Test filters
 console.log(filter.clean("Don't be an ash0le"));
 console.log(filter.clean("Hello people of Mars"));
-console.log(filter.clean("You fucking mother fucker"));
-console.log(filter.clean("You are a son of a whore"));
-console.log(filter.clean("You are a shit ass"));
+console.log(filter.clean("Curse you mother fucker"));
+console.log(filter.clean("Whats up shit ass"));
 console.log(filter.clean("This fucking product is unbelievable"));
-console.log(filter.clean("You are a bitch"));
+console.log(filter.clean("Yo bitch"));
 console.log(filter.clean("Hello people of Earth"));

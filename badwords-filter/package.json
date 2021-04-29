@@ -4,12 +4,17 @@
     "description": "A filter service for bad words",
     "main": "app.js",
     "scripts": {
-        "start": "node app.js"
+        "start": "nodemon server.js",
+        "test-filter":"node app.js"
     },
     "keywords": [],
     "author": "E. Martinez",
     "license": "MIT",
     "dependencies": {
-        "bad-words": "^3.0.3"
+        "bad-words": "^3.0.3",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "helmet": "^4.5.0"
     }
 }
