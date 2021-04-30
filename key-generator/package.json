@@ -4,15 +4,19 @@
     "description": "A service to generate product keys for your software",
     "main": "app.js",
     "scripts": {
-        "start": "node app.js"
+        "start": "nodemon server.js",
+        "test-keys":"node app.js"
     },
     "keywords": [],
     "author": "E. Martinez",
     "license": "MIT",
     "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
         "cryptr": "^6.0.2",
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
+        "helmet": "^4.5.0",
         "jsonwebtoken": "^8.5.1"
     }
 }
